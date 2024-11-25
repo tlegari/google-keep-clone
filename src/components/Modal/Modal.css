@@ -1,0 +1,36 @@
+.modal{
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    border: none;
+    transition: opacity 0.5s ease, visibility 0s 0.5s;
+    visibility: hidden;
+    
+}
+    
+.modal-content{
+    width: 598px;
+    position: relative;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    transition: transform 0.5s ease out;
+}
+
+.modal form{
+    
+    background-color: #ffff;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.open-modal{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s ease ;
+}
+   

@@ -1,0 +1,115 @@
+.main-content {
+   min-width: 0;
+  
+}
+
+.inactive-form-container.hidden {
+    display: none;
+}
+
+.inactive-form-container {
+    display: flex;
+    justify-content: center;
+    height: 46px;
+    margin: 50px 0 0 0;
+}
+
+.inactive-form-container .inactive-form {
+    display: flex;
+    align-items: center;
+    min-width: 598px;
+    justify-content: space-between;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.inactive-form input, .active-form input, .modal form input {
+    border: none;
+    height: 44px;
+    width: 80%;
+    padding: 0 0 0 16px;
+    font-size: 0.95rem;
+    font-weight: 400;
+    border-radius: 10px;
+}
+
+.inactive-form input:focus, .active-form input:focus, .modal form input:focus {
+    outline: none;
+}
+
+.inactive-form-icons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0 10px 0 0;
+}
+
+.active-form-container {
+    display: none;
+    justify-content: center;
+    margin: 50px 0 0 0;
+}
+
+.active-form-container.visible {
+    display: flex;
+}
+
+.active-form {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    min-width: 598px;
+    display: block;
+}
+
+.note-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note-pin {
+    padding: 6px;
+    border-radius: 50%;
+    margin: 0 12px 0 0;
+}
+
+.note-pin:hover {
+    background-color: #dedede;
+    cursor: pointer;
+}
+
+.note-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-icon {
+    font-size: 18px;
+    padding: 12px;
+    margin: 0 2px;
+    cursor: pointer;
+    color: #555; 
+}
+
+.footer-icon:hover {
+    color: #000; 
+}
+
+.redo-icon, .undo-icon {
+    color: #c9c9c9;
+}
+
+.close-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 12px 24px;
+    margin: 0 14px 4px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
+}
+
+.close-button:hover {
+    background-color: #f6f6f6;
+}
