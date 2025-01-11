@@ -43,14 +43,12 @@ const addNote = (title, text) => {
 };
 
   const updateNote = (id, updateTitle, updateText) => {
-      if(!notes){
-      setNotes((prevNotes) => {
-        prevNotes.map((note) =>
-        note.id === id ? { ...note, title: updateTitle, text: updateText} : note
-      );
-      });
-    }; 
-  };
+      setNotes((prevNotes) => 
+        prevNotes.map((note) => 
+        note.id === id ? {...note, title: updateTitle, text: updateText} : note
+      )
+    );
+  }
 
   const deleteNote = (id) => {
     setNotes((prevNotes) => prevNotes.filter((note) => note.id !== id));
